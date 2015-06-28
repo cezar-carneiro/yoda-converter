@@ -1,0 +1,16 @@
+<div ng-controller="sentenceController">
+    <div style="width:260px;height:360px;padding:20px;box-shadow:2px 2px 10px 10px #ccc;-webkit-box-shadow:2px 2px 10px 10x #ccc;-moz-box-shadow:2px 2px 10px 10px #ccc;font-family:Calibri, Arial, Helvetica;font-size:16px; text-shadow: 1px 1px #cccccc;border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px -o-border-radius:3px;-webkit-border-radius:3px;top:30%;left:50%;margin-left:-145px;margin-top:-145px;position:fixed;">
+        <div class="panel-body">
+            <img src="yoda.jpg"/><br/><br/>
+            <label>Type a message</label><br/>
+            <input type="text" ng-model="sentence.input"/>
+            <button type="submit" ng-click="onClick()" >
+                Convert
+            </button><br/><br/>
+            <label>Entered message:</label><br/>
+            <a>{{sentence.input}}</a><br/><br/>
+            <label>Yoda message:</label><br/>
+            <a>{{sentence.output}}</a><br/>
+        </div>
+    </div>
+</div>
